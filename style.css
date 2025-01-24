@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+}
+
+.loading-screen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    z-index: 999;
+    background-color: white;
+}
+
+.cover-image {
+    width: 90vw;
+    max-width: 200px;
+}
+
+.loading-gif {
+    width: 50px;
+}
+
+.gelocation-needed {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+}
+
+.game-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    display: none;
+}
+
+#tree-class {
+    font-weight: bold;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.tree-image {
+    width: 90%;
+    max-width: 400px;
+    /* max-height: 50vh; */
+}
+
+.tree-found {
+    z-index: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50px;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    justify-content: space-between;
+    gap: 50px;
+    display: none;
+    width: 80%;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen" class="loading-screen">
+        <img src="resources/portada.png" class="cover-image"/>
+        <img src="resources/loading.gif" class="loading-gif"/>
+    </div>
+
+    <div id="gelocation-needed" class="gelocation-needed">
+        <img src="resources/geo-blocked.png" class="cover-image"/>
+        <div>Para jugar, es necesario habilitar la ubicación.</div>
+    </div>
+
+    <div id="game-container" class="game-container">
+        <img id="tree-image" class="tree-image"/>
+        <div>Busca <span id="tree-class"></span></div>
+        <button id="found-button" class="button">Encontrado!</button>
+        <div id="no-close" style="display: none;">No estás cerca!</div>
+    </div>
+
+    <div id="tree-found" class="tree-found">
+        <div style="font-weight: bold;">Muy bien!</div>
+        <div id="tree-info"></div>
+        <button id="next-button" class="button">Siguiente árbol!</button>
+    </div>
+    
+</body>
+<script src="src/utils.js"></script>
+<script src="src/main.js"></script>
+</html>
